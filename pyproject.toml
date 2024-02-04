@@ -113,6 +113,11 @@ skip_gitignore = true
 # you can skip files as below
 #skip_glob = docs/conf.py
 
+[tool.ruff]
+exclude = [
+    "fast_ai/examples/*"
+]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
